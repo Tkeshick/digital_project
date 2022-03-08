@@ -1,0 +1,443 @@
+@media screen and (min-width: 768px) {
+    .block-header {
+        display: grid;
+        grid-template-columns: 4fr 6fr 2fr;
+        height: 7em;
+    }
+
+    .block-header__logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: left;
+    }
+
+    .block-header__logo-image {
+        grid-column: 2/3;
+        margin: 0.5em;
+        width: 8vw;
+        height: 5vw;
+    }
+
+    .block-header__navbar {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4vw;
+        list-style-type: none;
+        padding-left: 0em;
+    }
+
+    .block-header__navbar-links {
+        display: grid;
+        justify-content: left;
+
+    }
+
+    .block-header__navbar-links-menu {
+        text-decoration: none;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: rgb(51, 51, 51);
+        line-height: 12px;
+        transition: all .5s;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .link-hover-center:hover {
+        border-bottom: 1px solid rgb(51, 51, 51);
+        border-top: 1px solid rgb(51, 51, 51)
+    }
+
+    .font-tt-Hoves {
+        font-family: 'TT Hoves', Arial;
+        /* font-weight: 100; */
+        text-transform: uppercase;
+        font-size: 0.8vw;
+        letter-spacing: 2px;
+
+    }
+
+    .block-header__slider {
+        display: grid;
+        grid-template-columns: 4fr 7fr 1fr;
+    }
+
+    .block-header__carousel-txt {
+        display: grid;
+        grid-column: 1/2;
+        align-items: center;
+        grid-template-rows: 46% 17% 17% 20%;
+    }
+
+
+    .block-header__carousel-txt-title {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .block-header__carousel-txt_small-title__poject {
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Conv_TTHoves-Hairline', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vw;
+    }
+
+    .block-header__carousel-txt_big-title__nurtown {
+        align-items: flex-start;
+        margin: 0px;
+        color: rgba(51, 51, 51, 1);
+        font-family: 'Conv_TT Hoves-Bold', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5vw;
+
+    }
+
+    .block-header__carousel-txt__strike {
+        display: grid;
+        grid-template-columns: 25% 27% 48%;
+    }
+
+    .block-header__carousel-txt__number {
+        display: grid;
+        grid-template-columns: 25% 27% 48%;
+    }
+
+    .left-right {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-size: 1.2vw;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+
+    .numder-page {
+        display: grid;
+        grid-column: 2/3;
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-size: 1.6vw;
+        color: rgba(189, 189, 189, 1);
+        justify-content: space-between;
+    }
+
+    .num1 {
+        display: grid;
+        grid-column: 1/2;
+    }
+
+    .frasl {
+        display: grid;
+        grid-column: 2/3;
+    }
+
+    .num2 {
+        display: grid;
+        grid-column: 3/4;
+    }
+
+    .left-right {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 4fr;
+    }
+
+    .block-header__slider-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        grid-column: 2/3;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .block-header__slider-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-size: cover;
+        object-position: center;
+        width: 58vw;
+        height: 100%;
+    }
+
+
+
+
+
+    .block-header__slider-img__button {
+        grid-column: 1 / 2;
+        grid-row: -2 / -1;
+        background-color: #FFFFFF;
+
+    }
+
+    .txt-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 0.8vw;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        padding: 2em;
+
+    }
+
+    .right {
+        padding-left: 3em;
+        margin: 0;
+    }
+
+    .button-txt {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: 'TT Hoves', Arial, serif;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 767px) {
+    .block-header {
+        display: grid;
+        grid-template-columns: 4fr 7fr 1fr;
+        height: 3em;
+    }
+
+    .block-header__logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: left;
+    }
+
+    .block-header__logo-image {
+        grid-column: 2/3;
+        margin: 0.5em;
+        max-width: 9vw;
+    }
+
+    .block-header__navbar {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2vw;
+        list-style-type: none;
+        padding-left: 0em;
+    }
+
+    .block-header__navbar-links {
+        display: grid;
+        justify-content: left;
+
+    }
+
+    .block-header__navbar-links-menu {
+        text-decoration: none;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: #bdbdbd;
+        line-height: 12px;
+        transition: all .5s;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .link-hover-center:hover {
+        border-bottom: 1px solid rgb(51, 51, 51);
+        border-top: 1px solid rgb(51, 51, 51)
+    }
+
+    .font-tt-Hoves {
+        font-family: 'TT Hoves', Arial;
+        text-transform: uppercase;
+        font-size: 1.8vw;
+
+    }
+
+    .block-header__slider {
+        display: grid;
+        grid-template-columns: 4fr 7fr 1fr;
+    }
+
+    .block-header__carousel-txt {
+        display: grid;
+        grid-column: 1/2;
+        align-items: center;
+        grid-template-rows: 46% 17% 17% 20%;
+    }
+
+
+    .block-header__carousel-txt-title {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .block-header__carousel-txt_small-title__poject {
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Conv_TTHoves-Hairline', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vw;
+    }
+
+    .block-header__carousel-txt_big-title__nurtown {
+        align-items: flex-start;
+        margin: 0px;
+        color: rgba(51, 51, 51, 1);
+        font-family: 'Conv_TT Hoves-Bold', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5vw;
+
+    }
+
+    .block-header__carousel-txt__strike {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .block-header__carousel-txt__number {
+        display: grid;
+        grid-template-columns: 25% 55% 20%;
+    }
+
+    .left-right {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 3vw;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+
+    .numder-page {
+        display: grid;
+        grid-column: 2/3;
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-size: 2.6vw;
+        color: rgba(189, 189, 189, 1);
+        justify-content: space-between;
+    }
+
+    .num1 {
+        display: grid;
+        grid-column: 1/2;
+    }
+
+    .frasl {
+        display: grid;
+        grid-column: 2/3;
+    }
+
+    .num2 {
+        display: grid;
+        grid-column: 3/4;
+    }
+
+    .left-right {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 4fr;
+    }
+
+    .block-header__slider-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column: 2/3;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .block-header__slider-image {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-size: cover;
+        object-position: center;
+        width: 58vw;
+        height: 100%;
+    }
+
+
+    .block-header__slider-img__button {
+        grid-column: 1 / 2;
+        grid-row: -2 / -1;
+        background-color: #FFFFFF;
+
+    }
+
+    .txt-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 1.6vw;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        padding: 2em;
+
+    }
+
+    .right {
+        font-size: 2vw;
+        padding-left: 3vw;
+        margin: 0;
+    }
+
+    .button-txt {
+        display: grid;
+        font-family: 'TT Hoves', Arial, serif;
+        text-decoration: none;
+        color: rgb(95, 94, 94);
+        padding-top: 0.3em;
+    }
+
+}

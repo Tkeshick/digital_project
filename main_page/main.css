@@ -1,0 +1,518 @@
+@media screen and (min-width: 768px) {
+    .wrapper__main {
+        padding: 120px 9% 0;
+    }
+
+    .inner__about-company {
+        display: grid;
+        grid-template-columns: 8% 23% 23% 40% 6%;
+        background-color: #fbfbfbef;
+    }
+
+    .twopic {
+        grid-column: 2/3;
+        align-content: space-around;
+        max-width: 18.8vw;
+    }
+
+    .onepic {
+        grid-column: 3/4;
+        max-width: 18.8vw;
+        margin-left: 2vw;
+        max-height: 24vw;
+    }
+
+    .iner-text {
+        grid-column: 4/5;
+        margin: 0 2vw 0;
+    }
+
+    .container__about-company {
+        padding-top: 2vw;
+    }
+
+    .container__about-company__img-top {
+        width: 100%;
+    }
+
+    .container__about-company__img {
+        padding-top: 2vw;
+        width: 100%;
+    }
+
+    .image3 {
+        padding-top: 2vw;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__about-company__txt {
+        width: 100%;
+        margin: 0;
+        justify-content: start;
+    }
+
+    .head {
+        display: grid;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-weight: 300;
+        font-size: 4vw;
+        color: #bdbdbd;
+        justify-content: start;
+    }
+
+    .text {
+        display: grid;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-weight: 300;
+        font-size: 1.1vw;
+        line-height: 1.7vw;
+        color: #000000;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .button-about-company {
+        margin-top: 2.8vw;
+        width: 50%;
+        background-color: #FFFFFF;
+    }
+
+    /*блок основных задач*/
+    .section_main-goals {
+        margin-top: 8vw;
+    }
+
+    .wrapper_main-goals_text {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+    }
+
+    .wrapper_main-goals_text1 {
+        font-family: 'Conv_SFProDisplay-Black';
+        font-weight: 900;
+        font-size: 13.8vw;
+        color: #f2f2f2;
+        margin: 0;
+    }
+
+    .wrapper_main-goals_text2 {
+        display: flex;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 400;
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        color: #333333;
+        margin: 0;
+        align-items: center;
+    }
+
+    /*блок наши проекты*/
+    .section_main-project {
+        margin-top: 8vw;
+    }
+
+    .main-project_holder1,
+    .main-project_holder2,
+    .main-project_holder3,
+    .main-project_holder4,
+    .main-project_holder5 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .main-project_block1,
+    .main-project_block2,
+    .main-project_block3,
+    .main-project_block4,
+    .main-project_block5 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background: rgba(51, 51, 51, 0.7);
+        display: none;
+        text-align: center;
+    }
+
+    .main-project_holder1:hover .main-project_block1,
+    .main-project_holder2:hover .main-project_block2,
+    .main-project_holder3:hover .main-project_block3,
+    .main-project_holder4:hover .main-project_block4,
+    .main-project_holder5:hover .main-project_block5 {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
+        max-height: 255px;
+    }
+
+
+    .main-project_headline {
+        font-family: 'Conv_TTHoves-Bold';
+        font-size: 3vw;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .main-project_link {
+        font-family: 'Conv_TTHoves-Light';
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 1.5em;
+    }
+
+    .wrapper_main-project_box_project1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .wrapper_main-project_box_project2 {
+        display: grid;
+        grid-template-columns: 23% 40% 31.6%;
+        grid-gap: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .main-project_button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button__style {
+        border-radius: 0;
+        background-color: #333333;
+        color: #ffffff;
+        border: 0;
+        height: 4.2vw;
+        width: 13.8vw;
+        cursor: pointer;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-size: 0.8vw;
+    }
+
+
+    /* блок Связаться с нами */
+    .section_connect {
+        margin-top: 8vw;
+    }
+
+    .section_connect__box {
+        display: grid;
+        grid-template-columns: 36% 64%;
+        grid-gap: 2vw;
+    }
+
+    .section_connect__box-img {
+        max-width: 750px;
+    }
+
+    .section_connect__box-image {
+        width: 100%;
+    }
+
+    .section_connect__box-form {
+        max-width: 27vw;
+    }
+
+    .form-text {
+        width: 100%;
+        height: 2.7vw;
+        margin: 0.4vw;
+        margin-left: 0;
+        font-size: 0.9vw;
+        color: rgba(141, 141, 141, 1);
+        background-color: #F3F3F3;
+        border: 1px solid #F3F3F3;
+        text-align: left;
+        padding-left: 1.5vw;
+    }
+
+    .textarea {
+        height: 8vw;
+        padding-top: 0.7vw;
+    }
+
+    .checkbox-agree {
+        color: rgba(51, 51, 51, 1);
+        margin-right: 3px;
+    }
+
+    .checkbox-href {
+        text-decoration: none;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .button-txt-form {
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        background-color: #333333;
+        font-size: 0.8vw;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+
+@media screen and (max-width: 767px) {
+    .wrapper__main {
+        padding: 9vw 9% 0;
+    }
+
+    .inner__about-company {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background-color: #fbfbfbef;
+    }
+
+    .twopic {
+        grid-column: 1/2;
+        width: 33vw;
+        height: 40vw;
+    }
+
+    .onepic {
+        display: none;
+    }
+
+    .iner-text {
+        grid-column: 2/3;
+        margin: 0 2vw 0;
+    }
+
+    .container__about-company__img-top {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__about-company__img {
+        padding-top: 2vw;
+        width: 100%;
+    }
+
+    .container__about-company__txt {
+        width: 100%;
+        margin: 0;
+        justify-content: start;
+    }
+
+    .head {
+        display: grid;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-weight: 300;
+        font-size: 5.5vw;
+        color: #bdbdbd;
+        justify-content: center;
+    }
+
+    .text {
+        display: grid;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-weight: 200;
+        font-size: 3vw;
+        line-height: 3vw;
+        color: #000000a8;
+        max-width: 400px;
+        margin-top: 1.8vw;
+        text-align: center;
+    }
+
+    .button-about-company {
+        margin-top: 2.8vw;
+        width: 20%;
+        background-color: #FFFFFF;
+    }
+
+    /*блок основных задач*/
+    .section_main-goals {
+        margin-top: 15vw;
+    }
+
+    .wrapper_main-goals_text {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .wrapper_main-goals_text1 {
+        font-family: 'Conv_SFProDisplay-Black';
+        font-weight: 900;
+        font-size: 15vw;
+        color: #f2f2f2;
+        margin: 0;
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    .wrapper_main-goals_text2 {
+        display: flex;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 3vw;
+        color: #333333;
+        margin: 0;
+        align-items: center;
+    }
+
+    /*блок наши проекты*/
+    .section_main-project {
+        margin-top: 8vw;
+    }
+
+    .main-project_holder1,
+    .main-project_holder2,
+    .main-project_holder3,
+    .main-project_holder4,
+    .main-project_holder5 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .main-project_block1,
+    .main-project_block2,
+    .main-project_block3,
+    .main-project_block4,
+    .main-project_block5 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background: rgba(51, 51, 51, 0.7);
+        display: none;
+        text-align: center;
+    }
+
+    .main-project_holder1:hover .main-project_block1,
+    .main-project_holder2:hover .main-project_block2,
+    .main-project_holder3:hover .main-project_block3,
+    .main-project_holder4:hover .main-project_block4,
+    .main-project_holder5:hover .main-project_block5 {
+        display: block;
+    }
+
+    .project-image {
+        width: 100%;
+        max-height: 255px;
+    }
+
+
+    .main-project_headline {
+        font-family: 'Conv_TTHoves-Bold';
+        font-size: 3vw;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .main-project_link {
+        font-family: 'Conv_TTHoves-Light';
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 1.5em;
+    }
+
+    .wrapper_main-project_box_project1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .wrapper_main-project_box_project2 {
+        display: grid;
+        grid-template-columns: 23% 40% 31.6%;
+        grid-gap: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .main-project_button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button__style {
+        border-radius: 0;
+        background-color: #333333;
+        color: #ffffff;
+        border: 0;
+        height: 10vw;
+        width: 35vw;
+        cursor: pointer;
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        font-size: 2vw;
+        letter-spacing: 1px;
+    }
+
+
+
+    /* блок Связаться с нами */
+    .section_connect {
+        margin: 8vw;
+    }
+
+    .section_connect__box {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    .section_connect__box-img {
+        display: none;
+    }
+
+
+    .section_connect__box-form {
+        display: grid;
+        grid-column: 2/3;
+        width: 100%;
+    }
+
+    .form-text {
+        width: 100%;
+        height: 5vw;
+        margin: 1vw;
+        margin-left: 0;
+        font-size: 3vw;
+        color: rgba(141, 141, 141, 1);
+        background-color: #F3F3F3;
+        border: 1px solid #F3F3F3;
+        text-align: left;
+        padding-left: 1.5vw;
+    }
+
+    .textarea {
+        height: 18vw;
+        padding-top: 1vw;
+    }
+
+    .checkbox-agree {
+        color: rgba(51, 51, 51, 0.815);
+        margin-right: 1.5vw;
+    }
+
+    .checkbox-txt {
+        color: rgba(0, 0, 0, 0.479);
+        font-size: 3vw;
+    }
+
+    .checkbox-href {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.479);
+    }
+
+    .button-txt-form {
+        font-family: 'Conv_TTHoves-Light', Arial, serif;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        background-color: #333333;
+        font-size: 2vw;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,346 @@
+@media screen and (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 82% 1fr;
+    }
+
+    .iner {
+        grid-column: 2/3;
+    }
+
+    .title {
+        font-size: 4vw;
+        margin-top: 4.2vw;
+    }
+
+    .title-our {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: rgba(189, 189, 189, 1);
+        margin: 0;
+    }
+
+    .title-projects {
+        font-family: 'Conv_TTHoves-Bold', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        margin: 0;
+    }
+
+    .line {
+        color: #f2f2f2;
+    }
+
+    .iner__project-all {
+        padding: 2vw;
+        padding-left: 0;
+    }
+
+    .iner__project {
+        display: grid;
+        grid-template-columns: 57% 43%;
+        max-height: 435px;
+        background: #FBFBFB;
+        gap: 2vw;
+    }
+
+    .iner__project__place-image {
+        grid-column: 1/2;
+    }
+
+    .iner__project__image {
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .iner__project__txt {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: 35% 27% 38%;
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .iner__project__txt-title {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.7vw;
+        color: #BDBDBD;
+    }
+
+    .iner__project__txt-desc {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1vw;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 1);
+        max-width: 80%;
+    }
+
+    .iner__project__txt__button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .button-txt {
+        display: grid;
+        font-family: 'TT Hoves', Arial, serif;
+        font-size: 0.8vw;
+        margin: 1em;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+
+    .button-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        height: 50%;
+        align-self: flex-end;
+    }
+
+    .inner__number-page-arrow {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 30%;
+        height: auto;
+    }
+
+    .num {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-size: 1.6vw;
+        color: rgba(189, 189, 189, 1);
+
+    }
+
+    .now {
+        display: grid;
+        grid-column: 1/2;
+        color: black;
+        margin-right: 2em;
+    }
+
+    .frasl {
+        display: grid;
+        grid-column: 2/3;
+        margin-right: 2em;
+    }
+
+    .all {
+        display: grid;
+        grid-column: 3/4;
+        margin-right: 1em;
+    }
+
+    .right-arrow {
+        margin: 3px;
+        font-size: 1.6vw;
+    }
+
+    .inner__number-page {
+        height: 12%;
+    }
+
+    .arrow {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-weight: 800;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 82% 1fr;
+    }
+
+    .iner {
+        grid-column: 2/3;
+    }
+
+    .title {
+        font-size: 5vw;
+        margin-top: 4.2vw;
+    }
+
+    .title-our {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: rgba(189, 189, 189, 1);
+        margin: 0;
+    }
+
+    .title-projects {
+        font-family: 'Conv_TTHoves-Bold', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        margin: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .iner__project-all {
+        padding: 2vw;
+        padding-left: 0;
+    }
+
+    .iner__project {
+        background: #FBFBFB;
+        gap: 2vw;
+    }
+
+    .iner__project__image {
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .iner__project__txt {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: 22% 50% 28%;
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        margin: 0;
+        height: 40vw;
+    }
+
+    .iner__project__txt-title {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 3.2vw;
+        color: #BDBDBD;
+        margin: 0;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .iner__project__txt-desc {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.8vw;
+        color: rgba(0, 0, 0, 1);
+        max-width: 80%;
+        margin: 0;
+        justify-self: center;
+    }
+
+    .iner__project__txt__button {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .button-txt {
+        display: grid;
+        font-family: 'TT Hoves', Arial, serif;
+        font-size: 2vw;
+        margin: 1em;
+        text-decoration: none;
+        color: rgb(51, 51, 51, 1);
+    }
+
+    .button-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba(51, 51, 51, 1);
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    .right-arrow {
+        margin: 0.4em;
+        font-size: 3.5vw;
+    }
+
+    .inner__number-page-arrow {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+
+    .num {
+        font-family: 'Conv_TTHoves-Light', Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+        color: rgba(189, 189, 189, 1);
+        align-content: center;
+    }
+
+    .now {
+        display: grid;
+        grid-column: 1/2;
+        color: black;
+        margin-right: 2em;
+    }
+
+    .frasl {
+        display: grid;
+        grid-column: 2/3;
+        margin-right: 2em;
+    }
+
+    .all {
+        display: grid;
+        grid-column: 3/4;
+        margin-right: 1em;
+    }
+
+
+    .inner__number-page {
+        height: 7%;
+    }
+
+    .arrow {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .left-down {
+        grid-column: -3/-2;
+    }
+
+    .rirht-down {
+        grid-column: -2/-1;
+    }
+}
+
+
+/* -------------------------------------------------------------------- */

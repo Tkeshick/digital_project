@@ -1,0 +1,130 @@
+.wrapper {
+    padding: 2% 7% 2% 7%;
+}
+
+.parking_caption {
+    display: grid;
+    justify-content: start;
+}
+
+.parking_caption1 {
+    font-family: 'Conv_TTHoves-Hairline';
+    text-transform: uppercase;
+    color: #bdbdbd;
+    margin: 0%;
+    font-size: 4em;
+}
+
+.parking_caption2 {
+    font-family: 'Conv_TTHoves-Bold';
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #333;
+    margin: 0%;
+}
+
+.main_container_parking {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(auto-fit, repeat(3, 1fr));
+    gap: 2em;
+
+}
+
+.main_container_parking__image-big {
+    display: grid;
+    align-items: center;
+    grid-area: 1/1/2/3;
+
+}
+
+#main_container__parking_office_image-big {
+    width: 100%;
+    object-fit: cover;
+}
+
+.parking__font-tt-Hoves {
+    font-family: 'Conv_TTHoves-Thin', Arial;
+    font-size: 1.8vh;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 1.7em
+}
+
+.main_container_parking__image-project {
+    display: grid;
+    grid-area: 3/1/4/3;
+}
+
+#main_container__parking_project_image {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+
+    .parking_caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 8vw;
+    }
+
+    .parking_caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        text-transform: uppercase;
+        font-size: 8vw;
+        color: #333;
+        margin: 0%;
+    }
+
+    .parking__font-tt-Hoves {
+        font-family: 'Conv_TTHoves-Thin', Arial;
+        font-size: 2vh;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 1.7em
+    }
+
+    .main_container_parking__image-small {
+        display: none;
+    }
+
+    .main_container__parking-text {
+        display: grid;
+        grid-area: 2/1/3/3;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .main_container_parking__image-small {
+        display: none;
+    }
+
+    .main_container__parking-text {
+        display: grid;
+        grid-area: 2/1/3/3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main_container_parking__image-small {
+        display: grid;
+        grid-area: 2/1/3/2;
+    }
+
+    #main_container__parking_office_image-small {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .main_container__parking-text {
+        display: grid;
+        grid-area: 2/2/3/3;
+        padding-left: 2em;
+    }
+
+}

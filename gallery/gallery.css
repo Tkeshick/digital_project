@@ -1,0 +1,263 @@
+@media screen and (min-width: 768px) {
+
+    .wrapper {
+        padding: 2% 2% 7% 7%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 64px;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        font-size: 64px;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-content: space-around;
+    }
+
+    .holder1,
+    .holder2,
+    .holder3,
+    .holder4,
+    .holder5,
+    .holder6,
+    .holder7,
+    .holder8,
+    .holder9,
+    .holder10 {
+        position: relative;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 5px;
+        display: none;
+    }
+
+    .holder1:hover .block1,
+    .holder2:hover .block2,
+    .holder3:hover .block3,
+    .holder4:hover .block4,
+    .holder5:hover .block5,
+    .holder6:hover .block6,
+    .holder7:hover .block7,
+    .holder8:hover .block8,
+    .holder9:hover .block9,
+    .holder10:hover .block10 {
+        display: block;
+    }
+
+    p {
+        font-family: 'Conv_TTHoves-Medium';
+        color: #333333;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+
+    .page {
+        display: flex;
+        margin-top: 4em;
+    }
+
+    .gallery_pager {
+        font-size: 24px;
+    }
+
+    .gallery_pager_num {
+        font-family: 'Conv_TTHoves-Light';
+        margin-top: 10px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        margin-left: 23px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        padding: 2% 2% 7% 7%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 2em;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        font-size: 2em;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        align-content: space-around;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        visibility: hidden;
+    }
+
+    img {
+        padding-left: 40px;
+    }
+
+    .page {
+        display: grid;
+        margin-top: 4em;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .gallery_pager {
+        font-family: 'Conv_TTHoves-Light';
+        font-size: 24px;
+        margin-left: 23px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 800;
+        margin-left: 23px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .wrapper {
+        padding: 2% 2% 7% 7%;
+    }
+
+    .gallery_caption {
+        display: grid;
+        justify-content: start;
+    }
+
+    .gallery_caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 2em;
+    }
+
+    .gallery_caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        font-size: 2em;
+        color: #333;
+        margin: 0%;
+    }
+
+    .gallery_images {
+        display: grid;
+        justify-content: center;
+        grid-gap: 30px;
+    }
+
+    .gallery_line {
+        color: #f2f2f2;
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8,
+    .block9,
+    .block10 {
+        display: none;
+    }
+
+    .page {
+        display: grid;
+        margin-top: 4em;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .gallery_pager {
+        font-family: 'Conv_TTHoves-Light';
+        font-size: 24px;
+        margin-left: 23px;
+    }
+
+    .button {
+        border-radius: 0;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #f2f2f2;
+        width: 3em;
+        height: 3em;
+        font-family: 'Conv_TTHoves-Light';
+        font-weight: 800;
+        margin-left: 23px;
+    }
+}

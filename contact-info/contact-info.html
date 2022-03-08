@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" href="contact-info.css">
+    <link rel="stylesheet" href="..//fonts/stylesheet.css">
+    <link rel="stylesheet" href="..//header/header.css">
+    <link rel="stylesheet" href="..//footer/footer.css">
+    <title>Контактная информация</title>
+</head>
+<body>
+    <header>
+        <div class="block-header">
+            <div class="block-header__logo">
+                <img class="block-header__logo-image" src="..//header/header_images/logo.svg" alt="digital project logo">
+            </div>
+            <ul class="block-header__navbar font-tt-Hoves">
+                <li class="block-header__navbar-links"><a class="block-header__navbar-links-menu link-hover-center" href="../main_page/Architect_main.html" target="_blank">главная</a></li>
+                <li class="block-header__navbar-links"><a class="block-header__navbar-links-menu link-hover-center" href="..//gallery/gallery.html" target="_blank">Галерея</a></li> 
+                <li class="block-header__navbar-links"><a class="block-header__navbar-links-menu link-hover-center" href="..//our_projects/our_projects.html" target="_blank">Проекты</a></li> 
+                <li class="block-header__navbar-links"><a class="block-header__navbar-links-menu link-hover-center" href="..//sertificate/sertificate.html" target="_blank">Сертификаты</a></li>
+                <li class="block-header__navbar-links"><a class="block-header__navbar-links-menu link-hover-center" href="..//contact-info/contact-info.html" target="_blank">Контакты</a></li> 
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_contact_info">
+            <div class="contact-info__caption">
+                <h1 class="contact-info__caption1">Контактная</h1>
+                <h1 class="contact-info__caption2">Информация</h1>
+            </div>
+            <div class="contact-info__company-name contact-info__font-tt-Hoves-Bold">
+                «Digital Project»
+            </div>
+            <div class="contact-info__location contact-info__font-tt-Hoves-Thin">
+                г. Караганда, ул. Телевизионная 10 
+            </div>
+            <div class="contact-info__tel-number contact-info__font-tt-Hoves-Bold">
+                +7 (701) 77 76 811
+            </div>
+            <div class="contact-info__mail contact-info__font-tt-Hoves-Thin">
+                Galym.sultanov@mail.ru
+            </div>
+
+            <div class="contact-info__feedback-button contact-info__feedback-button--font-style">
+                <a href="#modal-window__feedback-form" class="contact-info__feedback-button--link-style"> Обратная связь</a> <!--добавить ссылку решить с кнопколй--> 
+            </div>
+            <div class="contact-info__map-image">
+                <div id="contact-info__map-image--circle"></div>
+            </div>
+
+            
+            <form class="modal-window__feedback" id="modal-window__feedback-form">
+                <div class="modal-window__feedback-table">
+                    <div class="modal-window__feedback-cell">
+                        <div class="modal-window__feedback-modal">
+                            <a href="#close" class="close"></a>
+                            <h3>Задать вопрос</h3>
+                            <div class="modal-window__feedback--form-group ">
+                                <input type="text" placeholder="Имя">
+                                <input type="tel" placeholder="Номер телефона">
+                                <input type="email" placeholder="Email">
+                                <input type="text" placeholder="Интересующий товар/услуга">
+                                <textarea placeholder="Сообщение" rows="3"></textarea>
+
+                                <label for="modal-window__feedback--checkbox">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</label>
+                                <input name="Confidantional policy" type="checkbox" checked id="modal-window__feedback--checkbox" /> 
+                        
+                                <div class="modal-window__send-button">
+                                    <a href="#" class="contact-info__feedback-button--link-style">Отправить</a> <!--добавить ссылку решить с кнопколй--> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <!-- <div class="dm-overlay" id="win1">
+                    <div class="dm-table">
+                        <div class="dm-cell">
+                            <div class="dm-modal">
+                                <a href="#close" class="close"></a>
+                                <div class="pl-left">
+                                    <img src="modal_window/success.svg" alt="success image">
+                                </div>
+                                <h3>Спасибо!</h3>
+                                <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+                                <div>кнопка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+        
+        </div>
+    </main>
+    <footer class="block-footer">
+        <div class="block-footer__logo">
+            <img src="../footer/footer_images/logo_footer.svg" alt="logo digital projects" id="block-footer__logo--size">
+        </div>
+
+        <div class="block-footer__info footer__font-tt-Hoves">
+            <div><a class="block-footer__info__links" href="..."><h4>Информация</h4></a> <!--добавить ссылку--> 
+                <ul class="block-footer__info--info_list">
+                    <li class="block-footer__info info_list_style"><a class="block-footer__info__links" href="..//main_page/Architect_main.html" target="_blank">Главная</a></li> <!--добавить ссылку--> 
+                    <li class="block-footer__info info_list_style"><a class="block-footer__info__links" href="..//gallery/gallery.html" target="_blank">Галерея</a></li> <!--добавить ссылку--> 
+                    <li class="block-footer__info info_list_style"><a class="block-footer__info__links" href="..//our_projects/our_projects.html" target="_blank">Проекты</a></li> <!--добавить ссылку--> 
+                    <li class="block-footer__info info_list_style"><a class="block-footer__info__links" href="..//sertificate/sertificate.html" target="_blank">Сертификаты</a></li> <!--добавить ссылку--> 
+                    <li class="block-footer__info info_list_style"><a class="block-footer__info__links" href="..//contact-info/contact-info.html" target="_blank">Контакты</a></li> <!--добавить ссылку--> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="block-footer__contacts">
+            <div class="block-footer__contacts--title footer__font-tt-Hoves"><h4>Контакты</h4></div>
+                <div class="block-footer__contacts-list footer__font-tt-Hoves">
+                    <div><img src="../footer/footer_images/map_point.svg" alt="map point image" ></div>
+                    <div class="block-footer__contacts--text">100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</div>
+                    
+                    <div><img src="../footer/footer_images/call.svg" alt="phone image"></div>
+                    <div class="block-footer__contacts--text">+7(701) 77 76 811</div>
+
+                    <div><img src="../footer/footer_images/mail.svg" alt="envelope image"></div>
+                    <div class="block-footer__contacts--title-text">Galym.sultanov@mail.ru</div>
+                </div>
+        </div>
+        <div class="block-footer__social-web footer__font-tt-Hoves">
+            <div class="block-footer__social-web-title"><h4>Социальные сети</h4>
+            </div>
+            <div class="block-footer__social-web-logos">
+                <a href=""><img src="../footer/footer_images/facebook.svg" alt="facebook logo"></a> <!--добавить ссылку--> 
+                <a href=""><img src="../footer/footer_images/twitter.svg" alt="twitter logo"></a> <!--добавить ссылку--> 
+                <a href=""><img src="../footer/footer_images/linkedIn.svg" alt="linkedIn logo"></a> <!--добавить ссылку--> 
+                <a href=""><img src="../footer/footer_images/pinterest.svg" alt="pinterest logog"></a> <!--добавить ссылку--> 
+            </div>
+        </div>
+        <div class="block-footer__digital-project--bottom-row-gray footer__font-tt-Hoves">© 2019 Digital Project. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>

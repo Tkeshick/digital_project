@@ -1,0 +1,291 @@
+@media screen and (max-width: 767px) {
+    .main_contact_info {
+        display: grid;
+        padding: 0% 7% 0% 7%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr 0.5fr 2fr 2fr 2fr 8fr;
+        gap: 5px;
+    }
+
+    .contact-info__caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 4.5vh;
+    }
+
+    .contact-info__caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        text-transform: uppercase;
+        font-size: 4.5vh;
+        color: #333;
+        margin: 0%;
+    }
+
+    .contact-info__feedback-button {
+        display: grid;
+        width: 100%;
+        background-color: #333333;
+        border: 1px solid #ffffff;
+        transition: all 0.4s ease;
+        margin-bottom: 5px;
+    }
+
+    .contact-info__feedback-button--font-style {
+        font-family: 'Conv_TTHoves-Thin', Arial;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-info__map-image {
+        display: grid;
+        background-image: url('contact-info_images/image_map_small.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat
+    }
+
+    #contact-info__map-image--circle {
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        margin-top: 22%;
+        margin-left: 57%;
+        background: #333333;
+        border: rgba(209, 209, 209, 0.993) solid 0.8vw;
+        ;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .main_contact_info {
+        margin: 2% 0% 7% 7%;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 2fr 1fr 0.5fr repeat(2, 1fr) 1.1fr;
+        gap: 10px;
+    }
+
+    .contact-info__caption1 {
+        font-family: 'Conv_TTHoves-Hairline';
+        text-transform: uppercase;
+        color: #bdbdbd;
+        margin: 0%;
+        font-size: 3.5vw;
+    }
+
+    .contact-info__caption2 {
+        font-family: 'Conv_TTHoves-Bold';
+        text-transform: uppercase;
+        font-size: 3.5vw;
+        color: #333;
+        margin: 0%;
+    }
+
+
+    .contact-info__feedback-button {
+        display: grid;
+        width: 50%;
+        background-color: #333333;
+        border: 1px solid #ffffff;
+        transition: all 0.4s ease;
+        padding: 0;
+    }
+
+
+
+    .contact-info__feedback-button--font-style {
+        font-family: 'Conv_TTHoves-Thin', Arial;
+        text-transform: uppercase;
+        font-size: 1vw;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+
+    .contact-info__map-image {
+        display: grid;
+        grid-area: 1/2/8/3;
+        background-image: url('contact-info_images/image_map_big.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #contact-info__map-image--circle {
+        position: relative;
+        top: 37%;
+        left: 65%;
+        width: 2vw;
+        height: 2vw;
+        background: #333333;
+        border: rgba(209, 209, 209, 0.993) solid 0.8vw;
+        ;
+        border-radius: 50%;
+    }
+
+
+}
+
+
+
+.contact-info__caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.contact-info__company-name {
+    display: grid;
+    align-content: end;
+}
+
+.contact-info__tel-number {
+    display: grid;
+    align-items: center;
+}
+
+.contact-info__mail {
+    display: grid;
+    align-items: center;
+}
+
+.contact-info__feedback-button--link-style {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info__feedback-button:hover {
+    background-color: #ffffff;
+    border-color: #333333;
+
+}
+
+.contact-info__feedback-button--link-style:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+
+
+/* слой затемнения */
+.modal-window__feedback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* активируем слой затемнения и модальное окно */
+.modal-window__feedback:target {
+    display: block;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+/* блочная таблица */
+.modal-window__feedback-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+/* ячейка блочной таблицы */
+.modal-window__feedback-cell {
+    display: table-cell;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* модальный блок */
+.modal-window__feedback-modal {
+    display: inline-block;
+    padding: 20px;
+    /* максимально возможная ширина */
+    max-width: 50em;
+    background: #ffffff;
+    /* внешняя тень блока */
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    ;
+    text-align: left;
+    /* анимация и время задержки */
+    -webkit-animation: fade .8s;
+    -moz-animation: fade .8s;
+    animation: fade .8s;
+}
+
+
+.contact-info__font-tt-Hoves-Bold {
+    font-family: 'Conv_TTHoves-Bold';
+    color: #333;
+}
+
+.contact-info__font-tt-Hoves-Regular {
+    font-family: 'Conv_TTHoves-Regular', Arial;
+}
+
+.contact-info__font-tt-Hoves-Thin {
+    font-family: 'Conv_TTHoves-Thin', Arial;
+}
+
+.modal-window__feedback--form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#modal-window__feedback--checkbox {
+    display: grid;
+    grid-area: 6/1/7/2;
+}
+
+.modal-window__send-button {
+    display: grid;
+    width: 100%;
+    background-color: #333333;
+    border: 1px solid #ffffff;
+    transition: all 0.4s ease;
+    margin-bottom: 5px;
+}
+
+.modal-window__send-button:hover {
+    background-color: #ffffff;
+    border-color: #333333;
+
+}
+
+.contact-info__feedback-button--font-style {
+    font-family: 'Conv_TTHoves-Thin', Arial;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.modal-window__feedback--font-tt-Hoves-Thin {
+    font-family: 'Conv_TTHoves-Thin', Arial;
+}
